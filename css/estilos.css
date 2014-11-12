@@ -1,32 +1,35 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(iconos.css);
 
+.u-block
+{
+	display: block;
+}
+.u-github
+{
+	background-color: #FF7C00;
+}
+.u-facebook
+{
+	background-color: #0082C3;
+}
 .u-title
 {
 	color: #00DAFF;
 	border-bottom: 2px dashed #00DAFF;
 }
-
-.u-facebook
-{
-	background-color: #0082C3;
-}
-
 .u-twitter
 {
 	background-color: #00BAE6;
 }
-
-.u-github
+.u-comingSoon
 {
-	background-color: #FF7C00;
+	background-color: gray;
+	color: white;
+	height: 245px;
+	width: 245px;
+	line-height: 245px;
 }
-
-.u-block
-{
-	display: block;
-}
-
 .icon-social
 {
 	display: inline-block;
@@ -50,9 +53,11 @@ body
 .Menu
 {
 	background-color: #303030;
+	position: fixed;
 	padding: 1px;
 	margin-bottom: 1em;
 	text-align: center;
+	width: 100%;
 }
 .Menu-list
 {
@@ -80,6 +85,7 @@ body
 {
 	text-align: center;
 	color: #DEE;
+	margin-top: 5em;
 }
 .ImageContainer
 {
@@ -139,13 +145,14 @@ body
 .Works-item
 {
 	display: inline-block;
-	width: 245px;
 	margin: 0 1em;
+	vertical-align: top;
+	width: 245px;
 }
 
 .Works-itemImage
 {
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 }
 
 .Work-itemDescription
