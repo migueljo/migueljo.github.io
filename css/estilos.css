@@ -180,7 +180,7 @@ body
 }
 .Footer-form
 {
-	max-width: 18em;
+	max-width: 17em;
 }
 .Footer-form,
 .Footer-information
@@ -212,7 +212,7 @@ body
 	outline: none;
 	padding: .2em 1em;
 	resize: none;
-	width: 100%;
+	width: 15em;
 }
 
 @media screen and (max-width: 646px){
