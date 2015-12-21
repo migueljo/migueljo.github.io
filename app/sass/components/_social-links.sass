@@ -1,0 +1,81 @@
+.social-links
+  padding: 0
+  text-align: center
+
+.social-links__item
+  text-decoration: none
+  display: block
+  margin: auto auto 1rem
+  &:last-child
+    margin-right: 0
+  @media (min-width: 760px)
+    margin-right: 2rem
+    display: inline-block
+
+
+.social-links__item__link
+  width: 200px
+  height: 50px
+  color: white
+  display: inline-block
+  line-height: 50px
+  background-color: rgba(black, 0.2)
+  text-decoration: none
+  transition: all 0.3s
+  text-align: left
+  padding-left: 1rem
+  &:hover
+    background-color: rgba(black, 0.6)
+    &.facebook,
+    &.twitter,
+    &.github,
+    &.linkdin
+      &:after
+        font-size: 1.3rem
+        transform: rotate(360deg)
+
+  &.facebook,
+  &.twitter,
+  &.github,
+  &.linkdin
+    position: relative
+    &:after
+      position: absolute
+      right: 1rem
+      transition: all 0.3s
+
+  &.facebook
+    vertical-align: baseline
+    display: inline-block
+    &:after
+      content: "\e901"
+      font-family: icomoon
+      margin-left: 0.5rem
+      color: #405D9B
+  &.twitter
+    vertical-align: baseline
+    display: inline-block
+    &:after
+      content: "\e902"
+      font-family: icomoon
+      margin-left: 0.5rem
+      color: #55ACEE
+  &.github
+    vertical-align: baseline
+    display: inline-block
+    &:after
+      content: "\e903"
+      font-family: icomoon
+      margin-left: 0.5rem
+      color: #333
+  &.linkdin
+    vertical-align: baseline
+    display: inline-block
+    &:after
+      content: "\e904"
+      font-family: icomoon
+      margin-left: 0.5rem
+      color: #0077B5
+
+  @media (min-width: 760px)
+    width: 150px

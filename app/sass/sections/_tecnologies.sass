@@ -1,0 +1,59 @@
+.tecnologies
+  text-align: center
+  padding: 7rem 1rem
+  background-color: #405d9b
+  .cont-items
+    font-size: 0
+
+.tecnologies__item
+  display: block
+  margin-bottom: 2rem
+  font-size: 16px
+  @media (min-width: 580px)
+    display: inline-block
+    width: 50%
+    max-width: 300px
+
+.tecnologies__title
+  color: white
+  font-weight: lighter
+  margin-bottom: 3rem
+
+.tecnologies__item__logo
+  &.img
+    img
+      width: 280px
+  &.text
+    &.js,
+    &.css,
+    &.html,
+    &.sass,
+    &.gulp
+      &:before
+        font-family: icomoon
+        font-size: 10rem
+    &.js
+      &:before
+        content: "\e900"
+        color: #F0DB4F
+    &.css
+      &:before
+        content: "\e906"
+        color: #35A9DB
+    &.html
+      &:before
+        content: "\e905"
+        color: #F1662A
+    &.sass
+      &:before
+        content: "\e909"
+        color: #CF649A
+    &.gulp
+      &:before
+        content: "\e908"
+        color: white
+
+.tecnologies__item__img
+
+.tecnologies__item__name
+  color: white
