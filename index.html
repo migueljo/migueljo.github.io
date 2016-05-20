@@ -146,18 +146,39 @@
         <Go>back to the beginning</Go>
       </button>
     </footer>
+    <form onsubmit="sendSMS(this); return false;">
+      <input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
+      <br/>
+      <input type="submit"/>
+    </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="/js/bundle.js"></script>
     <script>
       (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
-
-        var BRANCH_KEY = 'key_live_dhf3VNh36kVxoyQoNHSOOagerEeKqGlV'
-
-        branch.init(BRANCH_KEY, function(error, data) {
-          console.log(error)
-          console.log(data)
-          debugger
-        })
+        branch.init('YOUR-BRANCH-KEY');
+            function sendSMS(form) {
+                var phone = form.phone.value;
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function(err, result) {
+                    if (err) {
+                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                form.phone.value = "";
+            }
+        </script>
     </script>
   </body>
 </html>
