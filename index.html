@@ -1,184 +1,31 @@
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 maximum-scale=1.0">
     <title>Miguel Martinez</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header id="cont-navigation" class="cont-main-nav">
-      <nav class="main-nav"><span id="toggle-menu" class="main-nav__trigger">Menu</span>
-        <ul class="main-nav__cont-items">
-          <li id="go-to-me" class="main-nav__items"><a href="#" class="main-nav__items__link">Me</a></li>
-          <li id="go-to-description" class="main-nav__items"><a href="#" class="main-nav__items__link">Description</a></li>
-          <li id="go-to-portfolio" class="main-nav__items"><a href="#" class="main-nav__items__link">Portfolio</a></li>
-          <li id="go-to-tecnologies" class="main-nav__items"><a href="#" class="main-nav__items__link">Tecnologies</a></li>
-          <li id="go-to-footer" class="main-nav__items"><a href="#" class="main-nav__items__link">Footer</a></li>
-        </ul>
-      </nav>
-    </header>
-    <header id="main-header" class="main-header">
-      <div class="cont-info">
-        <div class="info-profile">
-          <div class="info-profile__cont-info">
-            <figure class="my-image"><img src="/img/picture-profile.jpg" alt="" class="my-image__img"></figure>
-            <h1 class="info-profile__name">Miguel Martinez</h1>
-            <h2 class="info-profile__job">Front-End Junior</h2>
-          </div>
-          <ul class="social-links">
-            <li class="social-links__item"><a target="_blank" href="https://www.facebook.com/migueljomartinez" class="social-links__item__link facebook">Facebook</a></li>
-            <li class="social-links__item"><a target="_blank" href="https://twitter.com/migueljomart" class="social-links__item__link twitter">Twitter</a></li>
-            <li class="social-links__item"><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAABbnGmoBi2mkSJeBNv5gZUyRnYPZ_S2W1UY&amp;trk=nav_responsive_tab_profile" class="social-links__item__link linkdin">Linkedin</a></li>
-            <li class="social-links__item"><a target="_blank" href="https://github.com/migueljo" class="social-links__item__link github">Github</a></li>
-          </ul>
-          <button id="go-to-my-info" class="go-to-my-info">Go to my info</button>
-        </div>
+    <div class="info-profile">
+      <div class="info-profile__cont-info">
+        <figure class="my-image"><img src="./img/profile.png" alt="" class="my-image__img"></figure>
+        <h1 class="info-profile__name">Miguel Martinez</h1>
+        <p class="info-profile__description">
+          I'm a software engineer with experience in web development working as a Frontend engineer building a widely range of applications such as: Banking apps, Real time apps, Telecommunication apps, Rental apps, Booking system, E-commerce apps. I love making products that are useful and people love.
+        </p>
       </div>
-    </header>
-    <section id="my-description" class="my-description">
-      <figure class="my-image"><img src="/img/picture-profile.jpg" class="my-image__img"></figure>
-      <p class="my-description__text">Hi there! I'm Miguel Martinez, I'm a very passionated Front-End developer living in the beautiful country Colombia, working with the very awesome teammates in Monoku(Bogota, Colombia)</p>
-    </section>
-    <section id="portfolio" class="portfolio">
-      <div class="max-width-1200">
-        <h2 class="portfolio__title">My personal work</h2>
-        <div class="portfolio__item">
-          <figure class="portfolio__item__cont-img placeholder"><img src="#" alt="" class="portfolio__item__img"></figure>
-          <footer class="portfolio__item__footer">
-            <p class="portfolio__item__name">Test</p>
-            <ul class="portfolio__item__tecno">
-              <li class="portfolio__item__tecno__item"><span class="tecnology js"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology css"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology html"></span></li>
-              <li class="portfolio__item__tecno__item"><img src="/img/jade-logo.svg" class="tecnology jade"></li>
-              <li class="portfolio__item__tecno__item"><img src="/img/gulp-white-text.svg" class="tecnology gulp"></li>
-              <li class="portfolio__item__tecno__item"><img src="/img/sass.svg" class="tecnology gulp"></li>
-            </ul>
-          </footer>
-        </div>
-        <div class="portfolio__item">
-          <figure class="portfolio__item__cont-img placeholder"><img src="#" alt="" class="portfolio__item__img"></figure>
-          <footer class="portfolio__item__footer">
-            <p class="portfolio__item__name">Test</p>
-            <ul class="portfolio__item__tecno">
-              <li class="portfolio__item__tecno__item"><span class="tecnology js"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology css"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology html"></span></li>
-            </ul>
-          </footer>
-        </div>
-        <div class="portfolio__item">
-          <figure class="portfolio__item__cont-img placeholder"><img src="#" alt="" class="portfolio__item__img"></figure>
-          <footer class="portfolio__item__footer">
-            <p class="portfolio__item__name">Test</p>
-            <ul class="portfolio__item__tecno">
-              <li class="portfolio__item__tecno__item"><span class="tecnology js"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology css"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology html"></span></li>
-            </ul>
-          </footer>
-        </div>
-        <div class="portfolio__item">
-          <figure class="portfolio__item__cont-img placeholder"><img src="#" alt="" class="portfolio__item__img"></figure>
-          <footer class="portfolio__item__footer">
-            <p class="portfolio__item__name">Test</p>
-            <ul class="portfolio__item__tecno">
-              <li class="portfolio__item__tecno__item"><span class="tecnology js"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology css"></span></li>
-              <li class="portfolio__item__tecno__item"><span class="tecnology html"></span></li>
-            </ul>
-          </footer>
-        </div>
-      </div>
-    </section>
-    <section id="tecnologies-section" class="tecnologies">
-      <div class="max-width-1200">
-        <h2 class="tecnologies__title">Tecnologies I use to work</h2>
-        <div class="cont-items">
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo text js"></div>
-            <p class="tecnologies__item__name">
-              Javascript
-              
-            </p>
-          </div>
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo text css"></div>
-            <p class="tecnologies__item__name">
-              CSS3
-              
-            </p>
-          </div>
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo text html"></div>
-            <p class="tecnologies__item__name">
-              HTML5
-              
-            </p>
-          </div>
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo text sass"></div>
-            <p class="tecnologies__item__name">
-              Sass
-              
-            </p>
-          </div>
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo text gulp"></div>
-            <p class="tecnologies__item__name">
-              Gulp
-              
-            </p>
-          </div>
-          <div class="tecnologies__item">
-            <div class="tecnologies__item__logo img jade"><img src="/img/jade-logo.svg" alt=""></div>
-            <p class="tecnologies__item__name">Jade</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="main-footer" class="footer">
-      <p class="footer__name">Miguel Martinez Front-End developer at Monoku, Bogota Colombia</p>
-      <button id="go-back-to-beginning" class="go-back-to-beginning">
-        <Go>back to the beginning</Go>
-      </button>
-    </footer>
-    <form onsubmit="sendSMS(this); return false;">
-      <input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
-      <br/>
-      <input type="submit"/>
-    </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="/js/bundle.js"></script>
-    <script>
-      (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
-        branch.init('key_live_bngXQCOKZq9Sdn34FR1F0kdevwj4666H');
-            function sendSMS(form) {
-                var phone = form.phone.value;
-                var linkData = {
-                    tags: [],
-                    channel: 'Website',
-                    feature: 'TextMeTheApp',
-                    data: {
-                        'foo': 'bar'
-                    }
-                };
-                var options = {};
-                var callback = function(err, result) {
-                    if (err) {
-                        alert("Sorry, something went wrong.");
-                    }
-                    else {
-                        alert("SMS sent!");
-                    }
-                };
-                branch.sendSMS(phone, linkData, options, callback);
-                form.phone.value = "";
-            }
-        </script>
-    </script>
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a target="_blank" href="https://twitter.com/migueljomart" class="social-links__item__link twitter">Twitter</a>
+        </li>
+        <li class="social-links__item">
+          <a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAABbnGmoBi2mkSJeBNv5gZUyRnYPZ_S2W1UY&amp;trk=nav_responsive_tab_profile" class="social-links__item__link linkdin">Linkedin</a>
+        </li>
+        <li class="social-links__item">
+          <a target="_blank" href="https://github.com/migueljo" class="social-links__item__link github">Github</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
